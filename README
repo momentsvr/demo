@@ -1,0 +1,50 @@
+# Welcome to the MomentsVR Application. 
+
+This application is a prototype system for supporting curating memories of migration in an immersive environment. 
+ 
+The website for the application is available at https://momentsvr.github.io/demo/
+
+A selection of memories curated with the system are there available for download, as well as the slidedeck tutorial for using the system. 
+
+# Running the system
+## Live Version
+
+The online desktop version of the application can be accessed at: https://momentsvr.github.io/demo/app.html
+
+This version of the application will enable a single user to edit stories in the desktop environment, and also enter the VR environment using a HMD connected to the system (e.g. a Meta Quest 3 connected via the Meta Quest Link). 
+
+## Local Version
+To enable multiple users to connect to a story, or enable a HMD to connect independantly (e.g. Meta Quest 3 from onboard browser) the application must be run locally to enable Websocket API to function. 
+
+Required software to run the system locally:
+
+- Node.js (https://nodejs.org/en, tested on version 22.15.0, Aug 2025)
+- npm (also https://nodejs.org/en, tested on version 10.9.2, Aug 2025)
+
+To run the system, download the repository, and install the dependencies with `npm install`.
+
+If the `npm install` gives you errors, cry quietly, and find your local node.js expert (hopefully a human being otherwise you're stuck with Google) to help get them sorted. 
+
+Once the dependencies are installed, run the application by executing `node app.js` in the primary folder (the folder where the app.js file is located), then open a browser and navigate to localhost:8000/app.html to check that it's working.
+
+# Importing stories
+MomentsVR stories files are stored as a ZIP file that contains all the media items as well as the data structure as a JSON (see the gallery folder in this repository). To import a story, you must be on the *desktop* version of the application. HMDs don't support the neccesary file API calls. 
+
+To import a story, open the main application (https://momentsvr.github.io/demo/app.html) and choose a workspace folder. All the files will be unpacked into this folder, and edits will be stored here as well. Give the browser permission to both read and write to this folder (should be a pop-up as soon as you select the folder).
+
+Download a ZIP, e.g. https://momentsvr.github.io/demo/gallery/Moving%20House.zip
+
+Select the 'Import Story' button, and select your downloaded ZIP. 
+
+Wait a couple minutes. (For the tech savey, import progress messages will appear in the console)
+
+You imported story will appear in the list. 
+
+### Connecting multiple users or devices
+To connect multiple users, you must open a port on your computer so other devices can connect to your port 8000. A free application to make this easier is offered by https://ngrok.com/. 
+
+Once another device is connected, open your desired story (edit it) in your *desktop* environment (required because only the desktop can retain changes). Click the 'Share' button at the top of the righthand menu. 
+
+The story should appear in the 'Shared Stories' section of the main page on the other device. If it doesn't appear, try refreshing a couple times, the websockets can be fussy. 
+
+Good luck.

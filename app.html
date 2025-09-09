@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Moments</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.164.1/build/three.module.js",
+                "three-mesh-ui": "https://cdn.jsdelivr.net/npm/three-mesh-ui@6.5.4/build/three-mesh-ui.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.164.1/examples/jsm/"
+            },
+            "scopes": {
+                "http://localhost:8000/": {
+                    "three": "/node_modules/three/build/three.module.js",
+                    "three-mesh-ui": "/node_modules/three-mesh-ui/build/three-mesh-ui.module.js",
+                    "three/addons/": "/node_modules/three/examples/jsm/"
+                }
+            }
+        }
+    </script>
+
+    <script src="lib/zip.min.js" charset="utf-8"></script>
+    <script src="lib/dom-to-image.min.js" charset="utf-8"></script>
+    <script src="lib/socket.io-v4.7.5.js" charset="utf-8"></script>
+    <script src="lib/delaunator.min.js" charset="utf-8"></script>
+
+</head>
+
+<body>
+    <div id="content"></div>
+
+    <script type="module">  import { main } from './js/main.js'; main(); </script>
+</body>
+
+</html>
