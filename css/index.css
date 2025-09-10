@@ -51,7 +51,7 @@ body {
     font-size: 30px
 }
 
-#evaluation>p {
+#gallery>p {
     text-align: justify;
     margin-left: 20%;
     width: 60%;
@@ -110,85 +110,18 @@ body {
     opacity: 1;
 }
 
-.study {
-    text-align: left;
-    margin-left: 20%
-}
-
-.study p {
+#evaluation>p {
     text-align: justify;
-    margin-right: 20%;
+    margin-left: 20%;
+    width: 60%;
     font-size: 24px;
 }
 
-#study1gallery {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-left: 20%;
-    padding-right: 20%;
-}
-
-
-.study1img {
-    position: relative;
-    height: 200px;
-    width: 200px;
-    overflow: hidden;
-    vertical-align: middle;
-}
-
-.study1img img {
-    object-fit: scale-down;
-    height: 200px;
-    width: 200px;
-    object-position: center;
-}
-
-.study1img p {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    visibility: hidden;
-    opacity: 0;
-    text-align: center;
-    font-size: 24px;
-    /* transition effect. not necessary */
-    transition: opacity .2s, visibility .2s;
-}
-
-.study1img:hover p {
-    visibility: visible;
-    opacity: 1;
-}
-
-#inspiration {
-    margin-right: 20%;
-}
-
-#inspiration img {
-    width: 100%;
-}
-
-.illustration-img {
-    width: 60%;
-}
-
-
-#vis {
+#evaluation>h2 {
     text-align: left;
-    margin-left: 20%
-}
-
-#vis>p {
-    text-align: justify;
+    margin-left: 20%;
     width: 60%;
-    font-size: 14px;
+    font-size: 24px;
 }
 
-#vis>iframe {
-    max-width: 600px;
-}
+

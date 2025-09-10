@@ -4,7 +4,7 @@ This application is a prototype system for supporting curating memories of migra
  
 The website for the application is available at https://momentsvr.github.io/demo/
 
-A selection of memories curated with the system are there available for download, as well as the slidedeck tutorial for using the system. 
+In addition to the application code, this repository also contains the project supplementary materials, including the video figure, a selection of memories curated with the system which can be viewed using the system, the tutorials slide-deck used in the evaluation, and an additional video tutorial. Please see the website or the supplementary-materials folder for this content.
 
 # Running the system
 ## Live Version
@@ -32,7 +32,7 @@ MomentsVR stories files are stored as a ZIP file that contains all the media ite
 
 To import a story, open the main application (https://momentsvr.github.io/demo/app.html) and choose a workspace folder. All the files will be unpacked into this folder, and edits will be stored here as well. Give the browser permission to both read and write to this folder (should be a pop-up as soon as you select the folder).
 
-Download a ZIP, e.g. https://momentsvr.github.io/demo/gallery/Moving%20House.zip
+Download a ZIP, e.g. https://momentsvr.github.io/demo/supplementary-materials/example-stories/Moving%20House.zip
 
 Select the 'Import Story' button, and select your downloaded ZIP. 
 
